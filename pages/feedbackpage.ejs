@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Food App</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="display-3" style="color: #fff;font-size: 3rem; margin-bottom: 20px;">Order</h1>
+    <!-- Add the new form for submitting feedback, image, and text file -->
+    <form action="/api/feedback" method="post" enctype="multipart/form-data" class="mt-4">
+      <h5 class="lead" style="color: #fff;text-align:left; font-size: 1.5rem;">Share your feedback.</h5>
+      <div class="form-group">
+        <label for="orderId" style="color: #fff;text-align:left;">Order ID:</label>
+        <input type="string" id="orderId" name="orderId" required class="form-control" style="border-radius:20px;">
+      </div>
+      <div class="form-group">
+        <label for="rating" style="color: #fff;text-align:left;">Feedback (1 to 5):</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" required class="form-control" style="border-radius:20px;">
+      </div>
+      <div class="form-group">
+        <label for="image" style="color: #fff;text-align:left;">Upload Image:</label>
+        <input type="file" id="image" name="image" class="form-control" style="border-radius:20px;height:3em;">
+      </div>
+      <div class="form-group">
+        <label for="textFile" style="color: #fff;text-align:left;">Upload Text File:</label>
+        <input type="file" id="textFile" name="textFile" class="form-control" style="border-radius:20px;height:3em">
+      </div>
+      <button type="submit" class="btn btn-light btn-lg btn-block" style=" background-color: #9d1bccb4; border-radius:20px; color: aliceblue;">Submit files</button>
+    </form>
+    <!-- End of the new form -->
+
+    <div class="row mt-4">
+      <div class="col-md-6 mb-3">
+        <a class="btn btn-light btn-lg btn-block" href="/track-order" role="button" style="color: #000000;border-radius:20px;">Track Order</a>
+      </div>
+      <div class="col-md-6 mb-3">
+        <a class="btn btn-light btn-lg btn-block" href="/api/logout" role="button" style="color: #000000;border-radius:20px;">Log Out</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

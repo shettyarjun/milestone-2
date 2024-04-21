@@ -1,0 +1,80 @@
+body {
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+ font-family: 'Arial', sans-serif;
+ margin: 0;
+ padding: 0;
+}
+
+
+
+.centered {
+ padding-top: 100px;
+ text-align: center;
+}
+
+.secret-text {
+ text-align: center;
+ font-size: 1.8rem;
+ color: #2b2a2a;
+  background:linear-gradient(deg 45, rgba(0, 0, 0, 0.705), rgba(11, 53, 136, 0.794));
+ padding: 20px;
+ margin-top: 20px;
+ border-radius: 8px;
+}
+
+/* Add more specific styling for the form if needed */
+.form-group {
+ margin-bottom: 20px;
+}
+
+input.form-control {
+ width: 100%;
+ padding: 10px;
+ font-size: 1rem;
+ border: 1px solid #2d2d2d;
+ border-radius: 10px;
+ box-sizing: border-box;
+}
+
+button.btn-dark {
+ display: inline-block;
+ padding: 10px 20px;
+ font-size: 1rem;
+ font-weight: bold;
+ text-align: center;
+ text-decoration: none;
+ cursor: pointer;
+ border: 1px solid #333;
+  background-color: #4756ff;
+ color: #fff;
+ border-radius: 10px;
+ transition: background-color 0.3s ease;
+}
+
+button.btn-dark:hover {
+  background-color:  #293af9;
+}
+
+.container {
+ margin-top: 50px;
+ width : 100%;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+.jumbotron {
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.481), rgba(37, 37, 226, 0.555));
+     display: flex; 
+     flex-direction: column; 
+     justify-content: center; 
+     align-items: center;
+}
+
+.display-3 {
+ font-size: 2.5rem;
+ margin-bottom: 20px;
+}
+
+
